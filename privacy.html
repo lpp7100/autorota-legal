@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoRota &mdash; Privacy Policy</title>
+<meta name="description" content="AutoRota Privacy Policy, including mobile messaging and SMS consent disclosures.">
+<!--
+  STATIC HTML ON PURPOSE.
+
+  The React version of this page at /privacy renders correctly in a browser but
+  returns an empty shell to anything that does not execute JavaScript. Twilio's
+  A2P 10DLC vetting crawler does not, so it saw a page with no policy on it and
+  rejected the campaign three times with error 30908 - "a compliant privacy
+  policy was not found on the website you submitted." The text was always
+  there; it was never in the HTTP response.
+
+  This file is served directly by the static host, so the full text is in the
+  response body with no JavaScript involved. Give Twilio THIS url.
+
+  KEEP IN SYNC with src/screens/LegalPages.tsx. If the SMS opt-in changes,
+  change both.
+-->
+<style>
+  body { max-width: 720px; margin: 0 auto; padding: 32px 22px 80px;
+         font: 15px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         color: #1a1a1a; }
+  .brand { font-size: 13px; font-weight: 700; letter-spacing: .4px; color: #3c3489; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 28px 0 8px; }
+  .sub { font-size: 13px; color: #6b6b70; margin: 0 0 6px; }
+  hr { border: 0; border-top: 1.5px solid #1a1a1a; margin: 14px 0 4px; }
+  li { margin: 0 0 7px; }
+  .foot { font-size: 13px; color: #6b6b70; margin-top: 36px; padding-top: 16px;
+          border-top: 1px solid #e2e2e6; }
+</style>
+</head>
+<body>
+
+<div class="brand">AUTOROTA</div>
+<h1>AutoRota Privacy Policy</h1>
+<p class="sub">Last updated 1 September 2026</p>
+<hr>
+
+<p>
+  This Privacy Policy is issued by <b>AutoRota</b>, which operates the AutoRota application and is
+  the sender of the text messages described below. Questions about this policy, or about messages
+  received from AutoRota, may be sent to <a href="mailto:autorotaapp@gmail.com">autorotaapp@gmail.com</a>.
+</p>
+
+<p>
+  AutoRota is scheduling and safety software for aviation units. It is provided to an organization,
+  and the people who use it are that organization&rsquo;s personnel. This policy explains what
+  AutoRota stores about them and what it does with it.
+</p>
+
+<h2>What we store</h2>
+<ul>
+  <li><b>Identity and contact details</b> &mdash; name, rank, work email, mobile telephone number,
+      home address, and emergency contact details. These are entered by the organization&rsquo;s
+      administrators, or by the individual, for the purpose of running the unit.</li>
+  <li><b>Work records</b> &mdash; shifts, hours, leave, overtime offers and responses,
+      qualifications and currency dates, and flight and mission records.</li>
+  <li><b>Safety records</b> &mdash; hazard reports and risk assessments. Hazard reports are
+      submitted anonymously and are described separately below.</li>
+  <li><b>Notification details</b> &mdash; push notification subscriptions for devices you have
+      registered, and whether you have consented to receive SMS and call alerts, including the date
+      consent was given, the method, and the specific number it was given for.</li>
+</ul>
+
+<h2>Mobile phone numbers and SMS</h2>
+
+<p>
+  <b>We do not share, sell, or provide your mobile phone number or messaging consent data to third
+  parties or affiliates for marketing or promotional purposes.</b>
+</p>
+
+<p>
+  Mobile numbers are used only to contact you about your own work &mdash; principally overtime
+  offers &mdash; and are passed only to the telecom provider that delivers the message or places
+  the call. They are not rented or disclosed for any other purpose.
+</p>
+
+<p>
+  <b>SMS and call alerts are opt-in.</b> Having a mobile number on file is not consent. You consent
+  separately inside the application, and you can withdraw that consent at any time in the
+  application or by replying STOP to any message. Replying HELP returns contact information.
+  Consent does not transfer if your number changes; it must be given again for the new number.
+</p>
+
+<p>
+  <b>Message frequency varies</b> and depends on operational activity. In a typical month a user
+  receives fewer than ten messages. <b>Message and data rates may apply</b> depending on your
+  mobile plan.
+</p>
+
+<p>
+  These are fallbacks. A notification is delivered to the application first. A text is sent only if
+  you have not responded within a set period, and an automated phone call only if you still have
+  not responded after that. If you respond at any point, the remaining steps do not happen.
+</p>
+
+<h2>Anonymous safety reporting</h2>
+<p>
+  Hazard reports carry no identifier of the person who filed them. There is no column in the
+  database linking a report to a user, and no list of &ldquo;your reports&rdquo; exists. A report is
+  retrievable only by a code shown once at submission and held by the reporter. Reports are
+  released to the reviewing team in batches so that the timing of a submission does not identify
+  its author. A reporter may optionally give their name if they want to be contacted.
+</p>
+
+<h2>Who can see what</h2>
+<p>
+  Access is restricted by role and enforced in the database, not only in the interface. Personal
+  contact details, calendar subscription tokens and signature images are readable only by the
+  individual concerned. Administrators of the organization can see the roster and work records
+  necessary to run it.
+</p>
+
+<h2>Where it is stored</h2>
+<p>
+  Data is held in a Postgres database operated by Supabase, and the application is served from
+  Replit. Connections are encrypted in transit. Push notifications are delivered by Apple and
+  Google; SMS is delivered by Twilio. These providers receive only what is needed to deliver the
+  message.
+</p>
+
+<h2>Retention</h2>
+<p>
+  Work and safety records are retained for as long as the organization requires them, which for
+  safety records may be several years. Push subscriptions are removed automatically once a device
+  stops accepting them. You may ask for your contact details to be corrected or removed at any
+  time.
+</p>
+
+<h2>Your choices</h2>
+<ul>
+  <li>Turn push notifications on or off per device, in the application.</li>
+  <li>Consent to or withdraw from SMS, in the application or by replying STOP.</li>
+  <li>Ask for your contact details to be corrected or removed.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy:
+  <a href="mailto:autorotaapp@gmail.com">autorotaapp@gmail.com</a>
+</p>
+
+<div class="foot">
+  AutoRota &middot; <a href="/terms.html">Terms of Service</a>
+</div>
+
+</body>
+</html>
